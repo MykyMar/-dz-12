@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Example Test Suite" parallel="classes">
+    <test name="People Tests">
+        <packages>
+            <package name="People"/>
+        </packages>
+    </test>
+    <test name="GetSet group">
+        <groups>
+            <run>
+                <include name="GetSet"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="People.ManTests"/>
+            <class name="People.WomanTests"/>
+            <class name="People.PersonGetSetTests"/>
+            <class name="People.PersonFuncTest"/>
+            <class name="People.PartnershipTest"/>
+        </classes>
+
+    </test>
+</suite>
